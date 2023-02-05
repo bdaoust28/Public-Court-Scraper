@@ -1,0 +1,6 @@
+scrapy
+redis
+bs4
+html-text
+json2
+fake-useragent

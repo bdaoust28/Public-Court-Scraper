@@ -1,0 +1,16 @@
+version: "1.0"
+name: public-court
+services:
+  redis-host:
+    image: "redis"
+    ports:
+      - 6379:6379
+    volumes:
+      - sqlite-redis-store:/var/lib/scraper-sqlite-redis-vol
+  scraper:
+    build: .
+    volumes:
+      - sqlite-redis-store:/var/lib/scraper-sqlite-redis-vol
+
+volumes:
+  sqlite-redis-store:
