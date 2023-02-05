@@ -1,5 +1,5 @@
 # PUBLIC COURT SCRAPER
-#### by Beau Daoust
+###### by Beau Daoust (2022)
 
 ## Disclaimer
 This project was originally developed as part of a job application (which is why this README is so verbose).
@@ -8,7 +8,7 @@ No warranty or guarantee is provided and the user assumes all responsibility for
 
 This project is open to contributions. 
 If you would like to make changes or improve the project, feel free to submit a pull request.
----
+
 
 ## Dependencies
 Required modules:
@@ -26,7 +26,7 @@ This project expects a JSON file called 'target.json', which includes the follow
 * docket
 * searchReferer
 * docketReferer
----
+
 
 ## Introduction
 
@@ -46,7 +46,7 @@ IMPORTANT in case you are not familiar with navigating directories in Windows Po
 * Enter `cd folder/` to move into another directory
 * Enter `cd ..` to move up a directory.
 * You can autocomplete a folder or file name by pressing the Tab key on your keyboard.
----
+
 
 ## Running this project
 
@@ -94,7 +94,7 @@ IMPORTANT in case you are not familiar with navigating directories in Windows Po
     - The database will have 3 tables: cases, parties, dockets
     - Try running a command, such as `SELECT * FROM cases WHERE id like 'J%';` to get all case IDs that start with J.
         - Note the quotation marks aroud "J%". This is important for SQLite to understand this command as a string.
----
+
 
 ## Querying the database
 
@@ -133,7 +133,7 @@ SQLite supports all usual SQL commands. If you aren't familiar with any, here ar
     - Note the parenthese on the left and right, which specify a string that exists within search parameters
         - A Python equivalent would be "if 'SN98C-09-99' in case_ids"
 
----
+
 
 ## Project Tasks
 
@@ -161,7 +161,7 @@ At a high level, this project accomplishes the following 3 tasks:
 9. Queries database to see if case docket data already exists, and inserts new data if not.
 10. Queries database to ensure new values have been added after spider is finished.
 11. Informs user of project runtime and how to query database.
----
+
 
 ## Project Limitations
 
@@ -187,7 +187,7 @@ The following are some limitations placed on the project for the time being:
     - This is due to time constraints, as the well-known methods of leaving the container running caused the project to fail.
     - I explored an alternative where I would install an always-up Ubuntu image with SQLite to share the Docker volume with, but I did not have enough time to implement it properly.
     - For the time being, the only way to query the SQLite database is to continually re-run the image.
----
+
 
 ## Major Decisions Made
 
@@ -221,7 +221,7 @@ The following are a few of those decisions, in no particular order:
     - This is due to SQLite's lightweight nature, ease of use and portability.
         - It is trivial create new database files, and testing SQLite's features is also hassle-free as you can load a temporary database in memory.
         - There is no need to install any additional software, as all that is needed is the portable sqlite3.exe.
----
+
 
 ## Notable Project Files
 
