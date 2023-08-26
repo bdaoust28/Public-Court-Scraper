@@ -3,7 +3,7 @@
 
 ## Disclaimer
 This project was originally developed as part of a job application (which is why this README is so verbose).
-Although the application was not successful, I believe in the principles of free and open-source software and have decided to make the source code available for educational purposes.
+Although said application didn't lead to an offer, I believe in the principles of free and open-source software and have decided to make the source code available for educational purposes.
 No warranty or guarantee is provided and the user assumes all responsibility for any actions or consequences resulting from the use of this project.
 
 This project is open to contributions. 
